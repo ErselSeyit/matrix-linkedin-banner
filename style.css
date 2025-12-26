@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#matrix {
+    display: block;
+    border: 2px solid #00ff41;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#downloadBtn {
+    background: #00ff41;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+#downloadBtn:hover {
+    background: #00cc33;
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.8);
+    transform: translateY(-2px);
+}
+
+#downloadBtn:active {
+    transform: translateY(0);
+}
+
+.info {
+    color: #00ff41;
+    font-size: 12px;
+    text-align: center;
+}
+
