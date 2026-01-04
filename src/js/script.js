@@ -104,9 +104,13 @@ function draw() {
                 if (isInWord) {
                     // Cyan/blueish for matched word characters
                     ctx.fillStyle = '#00ffff';
+                    // Bold Consolas/Monospace for Matrix vibe
+                    ctx.font = 'bold ' + fontSize + 'px Consolas, Monaco, "Andale Mono", monospace';
                 } else {
                     // Faint green for all other characters
                     ctx.fillStyle = 'rgba(0, 255, 65, 0.2)';
+                    // Revert to default monospace for normal rain
+                    ctx.font = fontSize + 'px monospace';
                 }
 
                 ctx.fillText(text, x, y);
